@@ -3,6 +3,7 @@ import images from '~/assets/images';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import styles from './Image.module.scss';
+
 const Image = forwardRef(
   (
     {

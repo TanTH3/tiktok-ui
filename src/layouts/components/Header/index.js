@@ -72,7 +72,7 @@ const useMenu = [
   {
     icon: <FontAwesomeIcon icon={faUser} />,
     title: 'View profile',
-    to: config.routes.profile,
+    to: '/@lebong95',
   },
   {
     icon: <FontAwesomeIcon icon={faCoins} />,
@@ -120,12 +120,12 @@ function Header() {
           {context.isLogIn ? (
             <>
               <Tippy content={'Messages'} placement="bottom">
-                <button>
+                <button className={cx('action-btn')}>
                   <MessageIcon />
                 </button>
               </Tippy>
               <Tippy content={'inbox'} placement="bottom">
-                <button>
+                <button className={cx('action-btn')}>
                   <InboxIcon />
                 </button>
               </Tippy>

@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import classNames from 'classnames/bind';
@@ -11,7 +9,11 @@ const cx = classNames.bind(styles);
 
 function AccountItem({ data, onClick }) {
   return (
-    <Link to={`/@${data.nickname}`} className={cx('wrapper')}>
+    <Link
+      to={`/@${data.nickname}`}
+      className={cx('wrapper')}
+      state={{ data: data.nickname }}
+    >
       <Image
         className={cx('avatar')}
         src={data.avatar}

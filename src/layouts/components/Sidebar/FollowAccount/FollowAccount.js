@@ -22,7 +22,6 @@ function SuggestHosts() {
 
     setIsSeeAll((prev) => !prev);
   }, [statusView]);
-  console.log(searchResult);
   return (
     <div>
       <span className={cx('label')}>Following accounts</span>

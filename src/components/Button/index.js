@@ -49,8 +49,9 @@ function Button({
     rounded,
     text,
   });
+
   return (
-    <Comp className={classes} {...props}>
+    <Comp className={classes} {...props} state={{ data: to }}>
       {leftIcon && <span className={cx('icon')}>{leftIcon}</span>}
       <span className={cx('title')}>{children}</span>
       {rightIcon && <span className={cx('icon')}>{rightIcon}</span>}

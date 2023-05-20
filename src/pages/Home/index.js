@@ -1,5 +1,19 @@
+import classNames from 'classnames/bind';
+import styles from './Home.module.scss';
+import Content from '~/components/Content';
+
+const cx = classNames.bind(styles);
+
 function Home() {
-  return <h2 style={{ height: 1000 }}>Home page</h2>;
+  return (
+    <div className={cx('container')}>
+      <div className={cx('content')}>
+        <Content />
+        <Content />
+        <Content />
+      </div>
+    </div>
+  );
 }
 
 export default Home;

@@ -1,14 +1,15 @@
 .wrapper {
+  position: static;
   width: 232px;
   display: flex;
   flex-direction: column;
-  height: 5000px;
   background-color: var(--white);
   padding: 20px 0 26px;
   align-items: stretch;
   min-height: 100%;
   padding-left: 8px;
   z-index: 6;
+  opacity: inherit;
 }
 
 .menu-sidebar {

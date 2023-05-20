@@ -9,10 +9,31 @@
   max-width: 100%;
   display: flex;
   margin-top: var(--default-layout-header-height);
+
+  .side-bar {
+    position: relative;
+    height: 880px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+.scroll-sidebar {
+  position: absolute;
+  width: 6px;
+  border-radius: 3px;
+  background: rgba(22, 24, 35, 0.06);
+  top: 0;
+  right: 0;
 }
 
 .content {
-  z-index: 5;
+  z-index: 2;
   flex: 1;
   background-color: var(--white);
+  height: 880px;
+  overflow-y: scroll;
 }

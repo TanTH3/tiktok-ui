@@ -28,7 +28,11 @@ function AccountHost({ data, onClick }) {
         render={renderPreview}
         placement="bottom"
       >
-        <Link to={`/@${data.nickname}`} className={cx('Item')}>
+        <Link
+          to={`/@${data.nickname}`}
+          className={cx('Item')}
+          state={{ data: data.nickname }}
+        >
           <Image
             className={cx('avatar')}
             src={data.avatar}

@@ -9,7 +9,6 @@ import Button from '~/components/Button';
 const cx = classNames.bind(styles);
 
 function AccountPreview({ data }) {
-  console.log(data);
   const handleFollow = () => {
     console.log(data);
   };
@@ -26,7 +25,11 @@ function AccountPreview({ data }) {
           Follow
         </Button>
       </div>
-      <Link to={`/@${data.nickname}`} className={cx('name')}>
+      <Link
+        to={`/@${data.nickname}`}
+        className={cx('name')}
+        state={{ data: data.nickname }}
+      >
         <span className={cx('user-name')}>{data.nickname}</span>
         {data.tick && (
           <span className={cx('check')}>
