@@ -1,37 +1,16 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import Tippy from '@tippyjs/react/headless';
 import classNames from 'classnames/bind';
-import styles from './SuggestHosts.module.scss';
+import styles from './FollowAccount.module.scss';
 import Image from '~/components/Image';
 import { TickBlueIcon } from '~/components/Icons';
-import { Wrapper as PopperWrapper } from '~/components/Popper';
-import AccountPreview from './AccountPreview';
-
 
 const cx = classNames.bind(styles);
 
-console.log(document.body)
-function AccountHost({ data, onClick }) {
-  const renderPreview = (attrs) => {
-    return (
-       <>
-            <div tabIndex="-1" {...attrs}>
-          <PopperWrapper>
-            <AccountPreview data={data} />
-          </PopperWrapper>
-        </div> 
-       </>
-    );
-  };
+function AccountFollow({ data, onClick }) {
+  
   return (
     <div>
-      <Tippy
-        interactive
-        delay={[500, 0]}
-        render={renderPreview}
-        placement="bottom"
-      >
         <Link
           to={`/@${data.nickname}`}
           className={cx('Item')}
@@ -55,13 +34,13 @@ function AccountHost({ data, onClick }) {
             <span className={cx('real-name')}>{data.full_name}</span>
           </div>
         </Link>
-      </Tippy>
+   
     </div>
   );
 }
 
-AccountHost.propTypes = {
+AccountFollow.propTypes = {
   data: PropTypes.object.isRequired,
   onClick: PropTypes.func,
 };
-export default AccountHost;
+export default AccountFollow;

@@ -14,11 +14,8 @@
     position: relative;
     height: 880px;
     overflow-y: scroll;
-    overflow-x: hidden;
 
-    &::-webkit-scrollbar {
-      display: none;
-    }
+   
   }
 }
 .scroll-sidebar {
@@ -31,7 +28,7 @@
 }
 
 .content {
-  z-index: 2;
+
   flex: 1;
   background-color: var(--white);
   height: 880px;

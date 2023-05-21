@@ -4,6 +4,7 @@ import Sidebar from '~/layouts/components/Sidebar';
 import classNames from 'classnames/bind';
 import styles from './DefaultLayout.module.scss';
 import PropTypes from 'prop-types';
+import { createPortal } from 'react-dom';
 
 const cx = classNames.bind(styles);
 
@@ -21,12 +22,14 @@ function DefaultLayout({ children }) {
     <div className={cx('wrapper')}>
       <Header />
       <div className={cx('container')}>
-        <div
+       <div
           ref={sidebarRef}
           className={cx('side-bar')}
           // onScroll={handleScroll}
         >
-          <Sidebar />
+          {createPortal(
+            <Sidebar />
+          , document.body)}
           <div
             className={cx('scroll-sidebar')}
             // style={{ height: `${heightScroll}px` }}

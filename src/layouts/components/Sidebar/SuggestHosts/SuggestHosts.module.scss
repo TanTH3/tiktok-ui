@@ -62,7 +62,7 @@
   padding: 12px 20px 20px 20px;
   background: rgb(255, 255, 255);
   border-radius: 8px;
-  z-index: 10;
+  
 
   .avatar-fl {
     display: flex;
@@ -72,22 +72,21 @@
     -webkit-box-pack: justify;
     justify-content: space-between;
     margin-bottom: 12px;
-    z-index: 10;
-
+   
     .avatar {
       width: 44px;
       height: 44px;
       border-radius: 50%;
       object-fit: cover;
       cursor: pointer;
-      z-index: 10;
+     
     }
   }
 }
 
 .follower {
   margin-top: 8px;
-  z-index: 10;
+
 
   .number {
     font-weight: 700;
@@ -95,7 +94,7 @@
     font-size: 17px;
     line-height: 20px;
     display: inline-block;
-    z-index: 10;
+    
   }
   .description {
     color: rgba(22, 24, 35, 0.75);
@@ -103,7 +102,7 @@
     line-height: 20px;
     display: inline-block;
     margin-right: 12px;
-    z-index: 10;
+ 
   }
 }
 // see all

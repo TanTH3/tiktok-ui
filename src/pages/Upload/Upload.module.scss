@@ -18,9 +18,7 @@
 .content {
   border-radius: 8px;
   display: flex;
-  -webkit-box-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
   align-items: center;
   flex-direction: column;
   cursor: pointer;
@@ -33,9 +31,7 @@
   position: relative;
   border-radius: 8px;
   display: flex;
-  -webkit-box-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
   align-items: center;
   flex-direction: column;
   padding-left: 35px;
@@ -130,8 +126,6 @@
 .footer-header {
   font-size: 14px;
   line-height: 28px;
-  font-family: 'sofiapro-bold', Arial, Tahoma, PingFangSC, sans-serif,
-    'Segoe UI Emoji', 'Noto Emoji';
   font-weight: 700;
   color: #fff;
   margin: 0;

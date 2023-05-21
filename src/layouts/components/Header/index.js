@@ -72,7 +72,7 @@ const useMenu = [
   {
     icon: <FontAwesomeIcon icon={faUser} />,
     title: 'View profile',
-    to: '/@lebong95',
+    to: '/@hniehtu10',
   },
   {
     icon: <FontAwesomeIcon icon={faCoins} />,
